@@ -1,30 +1,31 @@
 {
   "expo": {
     "name": "TalkTech",
-    "slug": "TalkTech",
+    "slug": "talktech",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#20539D"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+        "backgroundColor": "#20539D"
       },
-      "predictiveBackGestureEnabled": false
+      "package": "com.talktech.app"
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Permite anexar fotos de equipamentos aos chamados.",
+          "cameraPermission": "Permite fotografar equipamentos para os chamados."
+        }
+      ]
+    ]
   }
 }
